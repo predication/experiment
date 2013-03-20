@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\DemoAttribute.cs" />
+    <Compile Include="Core\ExampleBase.cs" />
+    <Compile Include="Core\ExampleHelper.cs" />
     <Compile Include="Lazy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

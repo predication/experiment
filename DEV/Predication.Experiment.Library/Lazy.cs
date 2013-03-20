@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Predication.Experiment.Library
 {
-    public class LazyExample
+
+    [Demo("Lazy", "An example of using the Lazy<T> type", ConsoleColor.Red, ConsoleColor.Yellow)]
+    public class LazyExample : ExampleBase
     {
-        public void Demonstrate()
+        public override void Execute()
         {
             DateTime functionStart = DateTime.Now;
             Lazy<ExpensiveTimestampedClass> lazyObject = new Lazy<ExpensiveTimestampedClass>();
@@ -21,8 +23,9 @@ namespace Predication.Experiment.Library
             Console.WriteLine("{0} : lazyObject.IsValueCreated = {1}", DateTime.Now, lazyObject.IsValueCreated);
             Console.WriteLine("Press a key to continue");
             Console.ReadKey();
-            Console.WriteLine("{0} : Static Timestamp = {1}", DateTime.Now, ExpensiveTimestampedClass.StaticTimestamp);
+            Console.WriteLine("{0} : Static Timestamp = {1}", DateTime.Now, ExpensiveTimestampedClass.StaticTimestamp);    
         }
+
     }
 
     public class ExpensiveTimestampedClass
