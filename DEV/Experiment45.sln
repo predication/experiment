@@ -1,7 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpConApp", "ExpConApp\ExpConApp.csproj", "{4A355AC6-B567-4514-B676-58182E080FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predication.Experiment.Library", "Predication.Experiment.Library\Predication.Experiment.Library.csproj", "{9F7F5600-FD34-4300-9BF8-B7CDA3046235}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A355AC6-B567-4514-B676-58182E080FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A355AC6-B567-4514-B676-58182E080FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A355AC6-B567-4514-B676-58182E080FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A355AC6-B567-4514-B676-58182E080FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7F5600-FD34-4300-9BF8-B7CDA3046235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7F5600-FD34-4300-9BF8-B7CDA3046235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7F5600-FD34-4300-9BF8-B7CDA3046235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7F5600-FD34-4300-9BF8-B7CDA3046235}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
