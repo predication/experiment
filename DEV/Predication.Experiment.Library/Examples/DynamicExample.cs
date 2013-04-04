@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Dynamic;
+using Predication.Experiment.VBLibrary;
 
 namespace Predication.Experiment.Library
 {
@@ -78,6 +79,22 @@ namespace Predication.Experiment.Library
                 Console.WriteLine(e.Message);
             }
 
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            // VB.NET has had late-binding dynamic-like behaviour - but the behaviours/exceptions are different
+            // keyword "dynamic" is a C# ONLY feature
+            Console.WriteLine("(* VB.NET *)");
+            Console.WriteLine("ExpandoTest test = new ExpandoTest();");
+            ExpandoTest test = new ExpandoTest();
+            try
+            {
+                Console.WriteLine("test.NonExistantProperty();");
+                Console.WriteLine(test.NonExistantProperty());
+            }
+            catch (MissingMemberException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.ResetColor();
         }
 
         public class NameEventArgs : EventArgs
