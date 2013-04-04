@@ -45,6 +45,7 @@
     <Compile Include="Core\DemoAttribute.cs" />
     <Compile Include="Core\ExampleBase.cs" />
     <Compile Include="Core\ExampleHelper.cs" />
+    <Compile Include="Examples\DynamicExample.cs" />
     <Compile Include="Examples\Lazy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Examples\TaskExample.cs" />
